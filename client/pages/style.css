@@ -3,3 +3,11 @@ body{
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
 }
+
+.card-test{
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
