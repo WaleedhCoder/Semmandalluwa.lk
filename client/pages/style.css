@@ -5,10 +5,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.card-test {
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+.card-test{
+  border-radius: 20%px;
+  -webkit-border-radius: 20%px;
+  -moz-border-radius: 20%px;
+  -ms-border-radius: 20%px;
+  -o-border-radius: 20%px;
 }
