@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 body {
-  line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
 }
 
-.card-test{
-  border-radius: 20%px;
-  -webkit-border-radius: 20%px;
-  -moz-border-radius: 20%px;
-  -ms-border-radius: 20%px;
-  -o-border-radius: 20%px;
+.cards {
+    display: flex;
 }
