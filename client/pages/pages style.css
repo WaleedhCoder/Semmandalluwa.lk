@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body {
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
+.product-card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
