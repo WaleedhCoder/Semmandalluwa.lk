@@ -2,107 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Login Semmandalluwa</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="forms-container">
-            <div class="signin-signup">
-                <form action="#" class="sign-in-form">
-                    <h2 class="title">Sign in</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
                     </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
                     </div>
-                    <input type="submit" value="Login" class="btn solid" />
-                    <p class="social-text">Or Sign in with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+
                     </div>
-                </form>
-                <form action="#" class="sign-up-form">
-                    <h2 class="title">Sign up</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
-                    </div>
-                    <input type="submit" class="btn" value="Sign up" />
-                    <p class="social-text">Or Sign up with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
                     </div>
                 </form>
             </div>
         </div>
-
-        <div class="panels-container">
-            <div class="panel left-panel">
-                <div class="content">
-                    <h3>New here ?</h3>
-                    <p>
-                        Then Sign up!
-                    </p>
-                    <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
-                </div>
-                <img src="img/log.svg" class="image" alt="" />
-            </div>
-            <div class="panel right-panel">
-                <div class="content">
-                    <h3>One of us ?</h3>
-                    <p>
-                        Then Sign-in!
-                    </p>
-                    <button class="btn transparent" id="sign-in-btn">
-              Sign in
-            </button>
-                </div>
-                <img src="img/register.svg" class="image" alt="" />
-            </div>
-        </div>
-    </div>
-
-    <script src="app.js"></script>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
