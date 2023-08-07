@@ -92,3 +92,51 @@ ul {
     background-color: #ffffff;
 }
 
+
+/*responsive*/
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.landing-Background {
+    background: url(./Assets/Landing\ page\ Background.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 30px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1170px;
+    height: auto;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 100vw;
+}
+
+.jumbotron {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+
