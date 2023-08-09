@@ -1,0 +1,11 @@
+.gallery {
+    width: 600px; /* Adjust the width as per your requirement */
+    height: 448px; /* Adjust the height as per your requirement */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flexbox;
+    flex-direction: row;
+  }
