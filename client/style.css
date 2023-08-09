@@ -139,4 +139,8 @@ ul {
     height: 500px;
 }
 
-
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
