@@ -138,3 +138,8 @@ ul {
     background-size: cover;
     height: 500px;
 }
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+}
