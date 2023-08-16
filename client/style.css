@@ -143,3 +143,7 @@ ul {
     display: flex;
     flex-direction: row;
 }
+
+.heading{
+    text-color:#FFC6AC;
+}
