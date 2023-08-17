@@ -1,2 +1,2 @@
-# Farm-Web-App--Semmandalluwa.lk-
+# Semmandalluwa.lk
 A Web App for ordering fresh Farm items
