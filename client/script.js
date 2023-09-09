@@ -1,3 +1,3 @@
 //Welcome Alert
 
-alert("Welcome To Semmandalluwa.lk!")
+alert("Welcome To Semmandalluwa.lk!");
