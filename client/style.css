@@ -10,43 +10,151 @@ body {
     box-sizing: border-box;
 }
 
-.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+body {
+    margin: 0;
+    --nav-load-time: 300ms;
+    --nav-link-load-time: 500ms;
+    --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time))
+  }
+  
+  
+  main {
+    padding: 30px;
+  }
+  
+  h1 {
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  
+  p {
+    animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  
+  @keyframes nav-load {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes nav-link-load {
+    0% {
+      transform: scale(0);
+    }
+  
+    90% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes nav-first-link-load {
+    0% {
+      transform: translateX(-1000%);
+    }
+  
+    90% {
+      transform: translateX(50%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes nav-last-link-load {
+    0% {
+      transform: translateX(1000%);
+    }
+  
+    90% {
+      transform: translateX(-50%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes article-load {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Background Styles Only */
+  
+  
+  .side-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .side-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #333333;
-    transition: opacity 0.75s, visibility 0.75s;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 10px;
   }
   
-  .loader--hidden {
-    opacity: 0;
-    visibility: hidden;
+  .side-link-youtube {
+    background-color: red;
   }
   
-  .loader::after {
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: #009578;
-    border-radius: 50%;
-    animation: loading 0.75s ease infinite;
+  .side-link-twitter {
+    background-color: #1DA1F2;
   }
   
-  @keyframes loading {
-    from {
-      transform: rotate(0turn);
-    }
-    to {
-      transform: rotate(1turn);
-    }
+  .side-link-github {
+    background-color: #6e5494;
   }
   
+  .side-link-text {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .side-link-icon {
+    color: white;
+    font-size: 30px;
+  }
 .container {
     max-width: 1170px;
     margin: auto;
