@@ -9,3 +9,11 @@
     background-repeat: no-repeat;
 
 }
+
+.heading{
+    font-weight: bolder;
+}
+
+.subheading{
+    font-weight: bold;
+}
